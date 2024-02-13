@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de fotos</title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <h1>Galeria de Fotos</h1>
+            <button id="btn_head" type="button">Adicionar Imagem +</button>
+        </div>
+    </header>
+    <section class="formulario">
+        <form>
+            <h2>Adicionar nova Imagem</h2>
+            <input id="new-img" type="url" placeholder="URL da Imagem" required />
+            <button type="submit">Adicionar +</button>
+            <button id="btn_rst" type="reset">Cancelar</button>
+        </form>
+    </section>
+    <section class="fotos">
+        <ul>
+        </ul>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

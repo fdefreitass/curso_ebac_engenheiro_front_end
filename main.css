@@ -1,0 +1,103 @@
+/* Global commands */
+:root {
+    --color-purple: #5f27cd;
+    --color-purple-2: #341f97;
+    --color-white: #fff;
+    --color-grey: #c8d6e5;
+    --color-green: #009432;
+    --color-red: red;
+}
+
+#btn_rst {
+    background-color: var(--color-red);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Settings */
+
+header {
+    background-color: var(--color-purple);
+    padding: 16px 0;
+    color: var(--color-white);
+    border-bottom: 16px solid var(--color-purple-2);
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho button {
+    margin-left: 1rem;
+}
+
+/* Main Settings */
+
+form {
+    background-color: var(--color-grey);
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+
+form h2 {
+    margin-bottom: 16px;
+}
+
+input,
+button {
+    padding: 8px;
+}
+
+button {
+    border: none;
+    background-color: var(--color-green);
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 300px;
+    overflow-y: hidden;
+}
+
+ul li img {
+    width: 100%;
+}
+
+.overlay {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .8s;
+}
+
+.overlay a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+ul li:hover .overlay{
+    opacity: 1;
+}
